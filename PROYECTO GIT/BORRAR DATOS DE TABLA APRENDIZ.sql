@@ -1,0 +1,2 @@
+--delete from Aprendiz where numero_documento in (select numero_documento  from Aprendiz group by numero_documento having count (*)>1);
+delete from Ficha where codigo_ficha in (select codigo_ficha from Ficha group by codigo_ficha having count (*)>1);
